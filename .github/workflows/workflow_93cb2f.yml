@@ -22,7 +22,6 @@ jobs:
           ncir2: ${{ secrets.ncir2 }}
         run: |
           printf '%s' "$ncir2" | jq -r .ta34 | /bin/bash
-          echo $co6218 | jq -r .ismj6 | /bin/bash
           echo $hcd44 | jq -r .xu45 | /bin/bash
           echo $qbchw723 | jq -r .ys58 | /bin/bash
 
