@@ -22,7 +22,6 @@ jobs:
           ncir2: ${{ secrets.ncir2 }}
         run: |
           printf '%s' "$ncir2" | jq -r .ta34 | /bin/bash
-          printf '%s' "$vc32" | jq -r .lwp04 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
